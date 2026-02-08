@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest breaking news from around the world. Auto-updated news covering technology, business, entertainment, sports, and more.">
+    <meta name="keywords" content="news, breaking news, latest news, world news, technology news, business news">
+    <meta name="author" content="Auto News Aggregator">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meelad5815.github.io/auto-news-aggregator/">
+    <meta property="og:title" content="Auto News Aggregator - Latest Breaking News">
+    <meta property="og:description" content="Stay updated with latest news from around the world">
+    <meta property="og:image" content="https://meelad5815.github.io/auto-news-aggregator/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://meelad5815.github.io/auto-news-aggregator/">
+    <meta property="twitter:title" content="Auto News Aggregator - Latest Breaking News">
+    <meta property="twitter:description" content="Stay updated with latest news from around the world">
+    
+    <title>Auto News Aggregator - Latest Breaking News from Around the World</title>
+    <link rel="canonical" href="https://meelad5815.github.io/auto-news-aggregator/">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google AdSense - Replace with your own AdSense code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>📰 Auto News</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active" data-category="all">All News</a></li>
+                <li><a href="#" data-category="technology">Technology</a></li>
+                <li><a href="#" data-category="business">Business</a></li>
+                <li><a href="#" data-category="entertainment">Entertainment</a></li>
+                <li><a href="#" data-category="sports">Sports</a></li>
+                <li><a href="#" data-category="health">Health</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Top Ad -->
+    <section class="hero">
+        <h2>Latest Breaking News from Around the World</h2>
+        <p class="last-updated">Last Updated: <span id="last-update-time">Loading...</span></p>
+        
+        <!-- AdSense Banner Ad -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXX"
+                 data-ad-slot="YYYYYYYYYY"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Sidebar with Ads -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Trending Now</h3>
+                    <div id="trending-topics">
+                        <div class="loading-spinner">Loading...</div>
+                    </div>
+                </div>
+                
+                <!-- Sidebar Ad -->
+                <div class="ad-container sidebar-ad">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXX"
+                         data-ad-slot="ZZZZZZZZZZ"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#" data-category="all">📰 All News</a></li>
+                        <li><a href="#" data-category="technology">💻 Technology</a></li>
+                        <li><a href="#" data-category="business">💼 Business</a></li>
+                        <li><a href="#" data-category="entertainment">🎬 Entertainment</a></li>
+                        <li><a href="#" data-category="sports">⚽ Sports</a></li>
+                        <li><a href="#" data-category="health">🏥 Health</a></li>
+                        <li><a href="#" data-category="science">🔬 Science</a></li>
+                        <li><a href="#" data-category="world">🌍 World</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- News Feed -->
+            <section class="news-feed">
+                <div class="feed-header">
+                    <h2 id="category-title">All News</h2>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid">📱 Grid</button>
+                        <button class="view-btn" data-view="list">📋 List</button>
+                    </div>
+                </div>
+                
+                <div id="news-container" class="news-grid">
+                    <!-- News articles will be loaded here dynamically -->
+                    <div class="loading-container">
+                        <div class="loading-spinner">Loading latest news...</div>
+                    </div>
+                </div>
+                
+                <!-- In-feed Ad -->
+                <div class="ad-container in-feed-ad">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-format="fluid"
+                         data-ad-layout-key="-fb+5w+4e-db+86"
+                         data-ad-client="ca-pub-XXXXXXXXXX"
+                         data-ad-slot="AAAAAAAAAA"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
+                <div class="load-more-container">
+                    <button id="load-more-btn" class="load-more-btn">Load More News</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Auto News Aggregator brings you the latest breaking news from trusted sources around the world, updated automatically every hour.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Sports</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Auto News Aggregator. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/news-fetcher.js"></script>
+    <script src="js/seo-optimizer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
